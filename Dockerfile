@@ -1,6 +1,6 @@
 FROM nginx
 
-RUN apt-get update -qq && apt-get install apache2-utils
+RUN apt-get update -qq && apt-get -y install apache2-utils
 ENV NODE_ROOT /var/www/api-gateway
 WORKDIR $NODE_ROOT
 RUN mkdir log 
